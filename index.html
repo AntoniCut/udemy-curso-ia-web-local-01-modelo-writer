@@ -1,0 +1,99 @@
+<!--
+    ----------------------------------------------
+    ----------  /udemy.antonydev.tech/  ----------
+    ----------  /curso-ia-web-local/  ------------
+    ----------  /01-modelo-writer/  --------------
+    ----------  /index.html  ---------------------
+    ----------------------------------------------
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/favicon/gemini-favicon.ico" type="image/x-icon">
+    <title> Modelo Writer ✏️ IA Web Local </title>
+
+    <link rel="preload" href="./css/view-transition.css" as="style">
+    <link rel="stylesheet" href="./css/view-transition.css">
+
+    <link rel="preload" href="./css/styles.css" as="style">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./js/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        
+        <img
+            class="header__logo"
+            src="./assets/img/gemini-logo.avif" 
+            alt="Logo Gemini Nano"
+        >
+        
+        <h1 class="header__title"> Curso IA Web Local <br> Gemini Nano </h1>
+
+        <img
+            class="header__logo"
+            src="./assets/img/gemini-logo.avif" 
+            alt="Logo Gemini Nano"
+        >
+        
+
+    </header>
+
+    <section class="container">
+
+        <h2 class="container__header"> 
+            ✍️ Escritor de textos con IA 
+        </h2>
+
+        
+        <label 
+            for="idea" 
+            class="container__label"
+        > 
+            ¿Que quieres escribir? 
+        </label>
+
+        <textarea 
+            id="idea" 
+            placeholder="Ejemplo: Redactar un Email para invitar a mis amigos a una Fiesta..."
+        ></textarea>
+
+        <label 
+            for="tone" 
+            class="container__label"
+        > 
+            Tono del texto 
+        </label>
+
+        <select id="tone">
+            <option value="neutral"> Neutral </option>
+            <option value="formal"> Formal </option>
+            <option value="casual"> Informal </option>
+        </select>
+
+        <label for="length" class="container__label"> Longitud del texto </label>
+        <select id="length">
+            <option value="short"> Corto </option>
+            <option value="medium"> Medio </option>
+            <option value="long"> Largo </option>
+        </select>
+
+        <button id="generate"> ✏️ Generar Texto </button>
+
+        <div id="output"> Aquí saldrá el texto generado con IA Local... </div>
+
+    </section>
+    
+</body>
+
+</html>

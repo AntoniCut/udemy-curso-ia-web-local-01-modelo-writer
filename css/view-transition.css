@@ -1,0 +1,17 @@
+/*
+    ------------------------------------------------
+    ----------  /udemy.antonydev.tech/  ------------
+    ----------  /curso-ia-web-local/  --------------
+    ----------  /01-modelo-writer/  ----------------
+    ----------  /css/view-transition.css  ----------
+    ------------------------------------------------
+*/
+
+
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-group(*) {
+    animation-duration: 1000ms;
+}
